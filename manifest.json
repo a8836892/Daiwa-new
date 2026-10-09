@@ -1,12 +1,12 @@
 {
-  "version": 1791559458,
+  "version": 1791560711,
   "updatedAt": "2026-10-09",
-  "tasksUrl": "kb_tasks_all.json",
-  "faqUrl": "kb_faq_all.json",
+  "tasksUrl": "kb_tasks_v1791560711.json",
+  "faqUrl": "kb_faq_v1791560711.json",
   "minAppVersion": 1,
-  "appVersionCode": 46,
-  "appVersionName": "1.67.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v1.67.0/DaiWa-debug.apk",
+  "appVersionCode": 47,
+  "appVersionName": "1.68.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v1.68.0/DaiWa-debug.apk",
   "changelog": "",
   "note": "把本文件的**直链**填入 App「我的 → 知识库 → 在线更新地址」即可。推荐用 GitHub 托管 + jsDelivr 加速：https://cdn.jsdelivr.net/gh/<用户名>/<仓库>@<分支>/manifest.json"
 }
