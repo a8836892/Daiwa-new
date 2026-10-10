@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 121,
-  "appVersionName": "2.40.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.40.0/DaiWa-debug.apk",
-  "changelog": "- **修复安卓端稀有特效看不清（主因是尺寸单位用错）**：\n  星形外径与流沙粒径原来写的是**裸像素**（星 5-12px、沙 0.8-2.4px），\n  在 3 倍密度屏上只有 1.7-4dp / 不足 1dp —— 等于画了一堆亚像素点。\n  现改为**按卡片高度取比例**（星 5.5%~11%、沙 0.6%~1.5%），并设最小像素下限\n  （星 5px、沙 1.6px），任何屏幕上视觉大小一致\n- 星形本体改为近乎实心（原来随呼吸淡到 0.2 透明度），光晕相应加强，\n  与浅金卡面的对比明显拉开"
+  "appVersionCode": 122,
+  "appVersionName": "2.41.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.41.0/DaiWa-debug.apk",
+  "changelog": "- **稀有特效回退到上一版**：撤掉 v2.40 的\"星沙按卡片比例放大 + 星形实心化\"改动，\n  尺寸与亮度都回到原来的写法（用户反馈那一版太夸张）\n- **日光模式下流动扫描调浅**：浅金卡面上再叠饱和金的高光带会过曝，\n  现在日光主题把扫描带整体压淡到 34%（暗夜保持 100%）\n  · App：读 ArkColors.isLight 决定扫描带透明度\n  · 网页：主题变量 --sweepK（日光 .34 / 暗夜 1）控制整条带的 opacity"
 }
