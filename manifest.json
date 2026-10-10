@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 102,
-  "appVersionName": "2.21.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.21.0/DaiWa-debug.apk",
-  "changelog": "- **把你已经填过的自定义任务回填成模板**：v2.20.0 只建了模板表，\n  旧的自定义任务不会自动变成会每天出现的模板 —— 它们仍然\"第二天就没了\"，\n  而这正是要解决的问题。本版按 (宝宝, 标题) 取最近一条各建一个模板。\n- 数据库 v12 → v13（只往新表 INSERT ... SELECT，**不修改 daily_task 任何数据**）\n- 真机验证：迁移链 11→12→13 全部通过，回填出「给宝宝吃AD」「吃Ad」两条，\n  数据完好（96 条任务 / 48 条照护记录，完整性 ok）"
+  "appVersionCode": 103,
+  "appVersionName": "2.22.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.22.0/DaiWa-debug.apk",
+  "changelog": "- **网页端问诊改为流式输出**：原来用非流式 chat() + respond()（带 Content-Length），\n  必须等整段答案生成完才一次性发出去 —— 用户只能盯着「思考中…」干等。\n  现在用 chatStream() 边生成边 flush，文字逐段冒出来。\n  实测：首字到达 **1.14 秒**（原来要等 2.99 秒才有第一个字），长回答改善更明显。\n- 实现要点：响应**不带 Content-Length** + Connection: close，写完就关连接，\n  浏览器读到连接关闭为止；网页端用 fetch + ReadableStream 边读边显示。\n- 确认网页端问诊与 App 走的是**同一套配置**（同一 LlmClient / 同一份 API Key），\n  在 App 里配一次即可，网页端不用再配。"
 }
