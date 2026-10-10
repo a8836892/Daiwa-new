@@ -1,12 +1,12 @@
 {
-  "version": 1791562344,
-  "updatedAt": "2026-10-10",
-  "tasksUrl": "kb_tasks_all.json",
-  "faqUrl": "kb_faq_all.json",
+  "version": 1791649747,
+  "updatedAt": "2026-10-11",
+  "tasksUrl": "kb_tasks_v1791649747.json",
+  "faqUrl": "kb_faq_v1791649747.json",
   "minAppVersion": 1,
-  "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
   "appVersionCode": 105,
   "appVersionName": "2.24.0",
   "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.24.0/DaiWa-debug.apk",
-  "changelog": "- **紧急修复：新的一天可能只生成自定义任务，必做/选做全套丢失**\n  - 原因：v2.20 把 ensureCustomTasks 放在 ensureDay 的 countOfDay 判断**之前**，\n    它插入自定义任务后就让「当天已有清单」成立，于是直接提前返回，\n    知识库任务（必做 + 选做 + 阅读）被整体跳过。用户看到的是\"今天的任务怎么没了\"。\n  - 修法：把补齐动作移到判断**之后**的两个返回路径上；\n    并抽出 buildKbTasks() 复用生成逻辑。\n- **自动修复已经被弄坏的当天清单**：若某天缺必做/选做（e_ / o_），\n  自动补齐缺的部分 —— 只插缺的 templateId，不会把已有阅读任务搞重复。\n  用户不需要重装或清数据。\n- 教训：判断条件不能把阅读任务（read:）算作\"清单完整\"，\n  阅读有它自己独立的自愈逻辑，否则残缺清单会被误判为正常。"
+  "changelog": "本次更新：\n· 喂养记录 / 经验流水支持「日历」按日期筛选，有记录的日子带小圆点\n· 修复历史记录展开后与筛选按钮重叠的问题\n· WebShare 新增 HTTPS（手机装一次证书后，网页里可直接语音提问）\n· 知识库在线更新更稳：多 CDN 镜像自动取最新，不再出现「内容校验未通过」\n· 修复只发 APK 时 manifest 不更新、导致检查不到新版本的问题",
+  "note": "把本文件的**直链**填入 App「我的 → 知识库 → 在线更新地址」即可。推荐用 GitHub 托管 + jsDelivr 加速：https://cdn.jsdelivr.net/gh/<用户名>/<仓库>@<分支>/manifest.json"
 }
