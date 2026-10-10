@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 101,
-  "appVersionName": "2.20.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.20.0/DaiWa-debug.apk",
-  "changelog": "- **自定义任务改为每天固定出现**：原来只加当天那一条，第二天就没了；\n  现在拆成「模板 + 每日实例」，每天自动铺进当日清单\n- **支持删除自定义任务**：删掉后以后每天不再生成，当天那条也一并清掉\n- 删除入口原来藏在「完整做法」展开区里不容易发现，自定义任务改为显示「编辑 / 删除」\n- 数据库 v11 → v12：新增 custom_task_template 表（**只建新表、不碰任何已有数据**）"
+  "appVersionCode": 102,
+  "appVersionName": "2.21.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.21.0/DaiWa-debug.apk",
+  "changelog": "- **把你已经填过的自定义任务回填成模板**：v2.20.0 只建了模板表，\n  旧的自定义任务不会自动变成会每天出现的模板 —— 它们仍然\"第二天就没了\"，\n  而这正是要解决的问题。本版按 (宝宝, 标题) 取最近一条各建一个模板。\n- 数据库 v12 → v13（只往新表 INSERT ... SELECT，**不修改 daily_task 任何数据**）\n- 真机验证：迁移链 11→12→13 全部通过，回填出「给宝宝吃AD」「吃Ad」两条，\n  数据完好（96 条任务 / 48 条照护记录，完整性 ok）"
 }
