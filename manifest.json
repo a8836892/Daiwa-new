@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 122,
-  "appVersionName": "2.41.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.41.0/DaiWa-debug.apk",
-  "changelog": "- **稀有特效回退到上一版**：撤掉 v2.40 的\"星沙按卡片比例放大 + 星形实心化\"改动，\n  尺寸与亮度都回到原来的写法（用户反馈那一版太夸张）\n- **日光模式下流动扫描调浅**：浅金卡面上再叠饱和金的高光带会过曝，\n  现在日光主题把扫描带整体压淡到 34%（暗夜保持 100%）\n  · App：读 ArkColors.isLight 决定扫描带透明度\n  · 网页：主题变量 --sweepK（日光 .34 / 暗夜 1）控制整条带的 opacity"
+  "appVersionCode": 123,
+  "appVersionName": "2.42.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.42.0/DaiWa-debug.apk",
+  "changelog": "- **安卓端稀有卡面改为\"从左到右的渐变底\"**（与网页端一致）\n  · 日光：#FFF6DC → #FFE9AE → #FFD980；暗夜：#4A3A10 → #6B5416 → #8A6A18\n  · 原来用\"稀有色低透明度叠加\"得到的是**单一颜色**，整张卡一个色，\n    看不出网页端那种左右渐变（用户指出）\n  · 做法：ArkCard 的 fill 设为透明，改由 rareSkin 在 drawContent 之前\n    铺一层 Brush.horizontalGradient，再画内容与星沙/扫描/四角"
 }
