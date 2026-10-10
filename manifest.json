@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 116,
-  "appVersionName": "2.35.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.35.0/DaiWa-debug.apk",
-  "changelog": "- **修复网页端稀有卡片特效完全看不到**：稀有的金底/边框/流光/星点原来都用了\n  \\color-mix()\\，它需要 Chrome 111+ / Safari 16.2+，手机自带浏览器多为旧内核\n  → 整条声明被判无效，卡片直接退回朴素样式。现已全部改为\n  gba(var(--rareRgb), a)\\ 的写法（十年前就支持）\n- **稀有任务完成时不再叠放普通经验音**：两者同时触发会叠成两条音轨，既吵又听不清。\n  App 端 RareSound 记录播放时刻，经验音前判断 1.5 秒内是否刚响过；\n  网页端同样用时间戳互斥"
+  "appVersionCode": 117,
+  "appVersionName": "2.36.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.36.0/DaiWa-debug.apk",
+  "changelog": "本次更新：\n· 喂养记录 / 经验流水支持「日历」按日期筛选，有记录的日子带小圆点\n· 修复历史记录展开后与筛选按钮重叠的问题\n· WebShare 新增 HTTPS（手机装一次证书后，网页里可直接语音提问）\n· 知识库在线更新更稳：多 CDN 镜像自动取最新，不再出现「内容校验未通过」\n· 修复只发 APK 时 manifest 不更新、导致检查不到新版本的问题"
 }
