@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 114,
-  "appVersionName": "2.33.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.33.0/DaiWa-debug.apk",
-  "changelog": "- **修复网页端「撤销」点不动**：稀有卡片的装饰层（星点/流光/四角）都是\n  position:absolute 铺满整卡，顺序在后的伪元素会盖住卡片内容，\n  导致「撤销」「查看详情」点不到。修法两条：\n  · 把卡片内容整体抬到装饰层之上（.task.rare>*:not(.sparks){z-index:2}）\n  · 给每个装饰层显式补 pointer-events:none，不再依赖分组规则"
+  "appVersionCode": 115,
+  "appVersionName": "2.34.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.34.0/DaiWa-debug.apk",
+  "changelog": "- **稀有任务完成音效改为原创的 JRPG 风格胜利号角**（3.05 秒）\n  · 动机（原创）：十六分上行铺垫 G-A-B → 附点 C5-E5 → 落定长音 G5（带颤音）→ 尾句冲高 C6\n  · 三声部铜管：小号主旋律 + 圆号中声部三度 + 低音铜管根音\n  · 弦乐两次渐强铺底，定音鼓开场一击 + 落定前滚奏 + 收尾一击，镲片收尾\n  · 混响比上一版更干，尾部 0.12 秒快速收掉，制造\"戛然而止\"的完成感\n  · 全部本地合成，不使用任何受版权保护的采样\n- 【说明】最终幻想的胜利号角是植松伸夫作曲、Square Enix 持版权的作品，\n  不能照抄或改编到近似；本版只借鉴这个**体裁的通用语汇**（上行铺垫、附点号角动机、\n  定音鼓滚奏、干脆收束），旋律与和声均为原创"
 }
