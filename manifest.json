@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 96,
-  "appVersionName": "2.15.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.15.0/DaiWa-debug.apk",
-  "changelog": "- 网页端任务打卡不再整页重渲染：改为就地更新那一行 + 只刷新等级，消除点击延迟感\n- 网页端音效改为预加载 + 复用 Audio 对象（原来每次播放都重新解码），消除卡顿\n- 网页端档案区改为按需渲染：切到档案页才构建，顺手记/打卡不再为看不见的内容白付渲染成本\n- 网页端问诊语音：按 🎤 后按钮变红并脉冲、图标变 ⏹，再点一下即可停止识别\n- 语音识别改为 continuous，由用户决定何时停（原来识别一句就自动结束）"
+  "appVersionCode": 97,
+  "appVersionName": "2.16.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.16.0/DaiWa-debug.apk",
+  "changelog": "- 修复「近 30 天打卡」日期与色块对不上（网页端 + App 端）\n  原因：7 列网格按顺序填格子，列并不代表星期 —— 今天恰好周六就会亮在第 2 列\n  改法：按首格星期补前导空格，让每列固定对应一个星期，并加上星期表头\n- 网页端热力图从 10 列改为 7 列（与 App 一致），提示语写明「列＝星期」"
 }
