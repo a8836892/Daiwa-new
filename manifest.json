@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 99,
-  "appVersionName": "2.18.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.18.0/DaiWa-debug.apk",
-  "changelog": "- 网页端新增**网络自检**：标题栏显示当前是「局域网」还是「跨网络」\n- 局域网下会自动探测跨网络地址是否可达，可达则徽章变成「可跨网络」并可一键切换\n- 新增 \\/ping\\ 探测端点（极小 JSON，带 CORS 头，供跨源探测）\n- **不做自动跳转**：两个地址是不同源、localStorage 不共享，自动跳会让人以为设置丢了\n- 探测支持 HTTP 回退（HTTPS 页面发 HTTP 请求会被混合内容策略拦掉，只在 HTTP 页面补试）"
+  "appVersionCode": 100,
+  "appVersionName": "2.19.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.19.0/DaiWa-debug.apk",
+  "changelog": "- 跨网络方案从 Tailscale 换成**蒲公英（贝锐）**：国区 App Store 可正常下载（Tailscale 已下架）\n- HTTPS 证书 SAN 加入蒲公英虚拟地址 z.16.0.109- 网页端网络自检的跨网络地址同步改为蒲公英（同时保留识别 Tailscale 地址，换回来也不用改代码）\n- 安卓端：始终开启的 VPN 指向蒲公英，并把蒲公英与「带娃」都加入电池优化白名单"
 }
