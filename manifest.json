@@ -1,12 +1,12 @@
 {
-  "version": 1791649747,
+  "version": 1791650840,
   "updatedAt": "2026-10-11",
-  "tasksUrl": "kb_tasks_v1791649747.json",
-  "faqUrl": "kb_faq_v1791649747.json",
+  "tasksUrl": "kb_tasks_all.json",
+  "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
-  "appVersionCode": 105,
-  "appVersionName": "2.24.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.24.0/DaiWa-debug.apk",
-  "changelog": "本次更新：\n· 喂养记录 / 经验流水支持「日历」按日期筛选，有记录的日子带小圆点\n· 修复历史记录展开后与筛选按钮重叠的问题\n· WebShare 新增 HTTPS（手机装一次证书后，网页里可直接语音提问）\n· 知识库在线更新更稳：多 CDN 镜像自动取最新，不再出现「内容校验未通过」\n· 修复只发 APK 时 manifest 不更新、导致检查不到新版本的问题",
-  "note": "把本文件的**直链**填入 App「我的 → 知识库 → 在线更新地址」即可。推荐用 GitHub 托管 + jsDelivr 加速：https://cdn.jsdelivr.net/gh/<用户名>/<仓库>@<分支>/manifest.json"
+  "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
+  "appVersionCode": 106,
+  "appVersionName": "2.25.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.25.0/DaiWa-debug.apk",
+  "changelog": "- **任务种类大幅扩充**：0-12 个月 8 个年龄段的必做/选做池各 +50 条以上\n  （合并后每段必做 57-76 条、选做 57-65 条，共新增 833 条）\n- **顺手记提示翻倍**：母乳 105 条 / 奶粉 106 条 / 纸尿裤 106 条（原各 50 条）\n- **脐带残端护理只在 7-21 天出现**：新增天龄区间字段 dayFrom/dayTo\n  （按月龄表达不了这种窗口 —— 满月宝宝的脐带早已脱落，再推这条就是错的）\n  · 已生成但按天龄不该出现、且**未完成**的任务会自动清除（完成过的不动，避免影响经验与撤销）\n- **修复每日抽取的轮换失效**：coreSize 原取\"源池的 60%\"，池子变大后被 min(n) 截成 n，\n  导致每天永远返回前 n 条 —— 新增的任务一条都轮不到（等于白扩容）。改为取\"需要条数的 60%\"\n- **修复「换一批选做」三个问题**：\n  · 连点两次结果完全相同（偏移按天算，固定不变）→ 改为整池随机取\n  · 固定保留前 3 条当核心 → 换一批不该留核心\n  · 补的条数写死 6 → 有已完成条目时列表会膨胀；且阅读任务被清掉后又被自愈补回，\n    每点一次净增 2 条（实测 8→10→12）。现在阅读不参与换批，总数恒定\n- 新增任务分类「健康」「日常照护」，并把「互动」归到社交情绪，保证图标正确"
 }
