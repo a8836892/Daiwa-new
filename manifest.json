@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 98,
-  "appVersionName": "2.17.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.17.0/DaiWa-debug.apk",
-  "changelog": "- HTTPS 证书加入 **Tailscale 的 MagicDNS 域名**与 IP，支持跨网络加密访问：\n  \u0007ln-al00.tail51e01b.ts.net（推荐，换 IP 也不用重签）+ 100.127.111.8\n- 修 \tools/gen-cert.cmd 重复执行会失败（keytool 不允许重复添加同名别名，先删旧 keystore）\n- 已确认：电脑端用系统信任库校验 HTTPS 通过（daiwa.local / 局域网 IP 均 HTTP 200）\n  注意每台设备需要重新安装一次新证书"
+  "appVersionCode": 99,
+  "appVersionName": "2.18.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.18.0/DaiWa-debug.apk",
+  "changelog": "- 网页端新增**网络自检**：标题栏显示当前是「局域网」还是「跨网络」\n- 局域网下会自动探测跨网络地址是否可达，可达则徽章变成「可跨网络」并可一键切换\n- 新增 \\/ping\\ 探测端点（极小 JSON，带 CORS 头，供跨源探测）\n- **不做自动跳转**：两个地址是不同源、localStorage 不共享，自动跳会让人以为设置丢了\n- 探测支持 HTTP 回退（HTTPS 页面发 HTTP 请求会被混合内容策略拦掉，只在 HTTP 页面补试）"
 }
