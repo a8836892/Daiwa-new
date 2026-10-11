@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 124,
-  "appVersionName": "2.43.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.43.0/DaiWa-debug.apk",
-  "changelog": "新增：\n- 网页端「🕘 补录」按钮：抱娃时腾不出手，事后再补记几小时前的喂奶 / 换尿裤。\n  可选类型（母乳 / 奶粉 / 尿裤）、时间（手机上会调起系统的日期时间选择器）、\n  常用快选（30 分钟前 / 1 小时前 / 3 小时前）和备注。\n- 补录会算在**当时那一天**：补昨天的记录就落在照护历史的昨天那一栏，\n  热力图和统计都跟着对上；经验照常结算，事后也能「撤销上次」。\n- 选「奶粉」又没写备注时，自动带上当前的 ml 数（与「喂奶」按钮一致）。\n\n修复了：\n- 无"
+  "appVersionCode": 125,
+  "appVersionName": "2.44.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.44.0/DaiWa-debug.apk",
+  "changelog": "新增：\n- 无\n\n修复了：\n- 安卓端：更新包**下载完就自动弹出安装界面**，不用再去通知栏点那条下载通知了。\n- 安卓端：安装完成后自动删掉下载的更新包（十几 MB），不再白白占手机空间。\n- 安卓端：更新下载改为**直连 GitHub**，去掉了国内镜像的探测——\n  以前点「立即下载更新」要先干等半分钟探测失效的镜像，才回落到直连。\n- 安卓端：下载完没装上（划掉了安装界面、或没允许「安装未知应用」）时，\n  再点一次「立即下载更新」会**直接用已经下好的包**，不重复下载。"
 }
