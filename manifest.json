@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 129,
-  "appVersionName": "2.48.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.48.0/DaiWa-debug.apk",
-  "changelog": "新增：\n- 抽中神秘物品时全屏炸开一圈金色爆光，比原来的纯渐变亮眼得多。\n- 棋盘上跳动的棋子换成「金色花台托一颗菱形宝石」的插画，走到哪一格一眼跟得上。\n- 仓库里的兑换券换上真券面：奶茶券暖棕、大餐券橙红、购物袋券深蓝，三张版式统一。\n- 抽中券时弹出的结果卡直接显示那张券的券面。\n\n修复了：\n- 无"
+  "appVersionCode": 131,
+  "appVersionName": "2.50.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.50.0/DaiWa-debug.apk",
+  "changelog": "新增：\n- 掷骰音效重做：现在是骰子扔到木桌上的几下撞击加闷响，不再是均匀的沙沙声。\n- 普通奖励（经验）改成又平又短的一声「笃」，不再拖尾、不再尖锐。\n- 中奖音效改暖：兑换券是温和的两音上行，不再刺耳。\n- 抽中神秘物品改成长约 2 秒的「宫殿爆发」音：低频铺底加上行琶音，起音柔和。\n- 普通奖励以上抽中时新增等级演出：A 奖励是蓝色光芒，S 奖励是宫殿里炸开的金色光芒。\n- 网页端抽奖同步这套音效与等级演出。\n\n修复了：\n- 无"
 }
