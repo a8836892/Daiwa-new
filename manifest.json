@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 128,
-  "appVersionName": "2.47.0",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.47.0/DaiWa-debug.apk",
-  "changelog": "新增：\n- 网页端也有棋盘抽奖了：今日页顶部点「棋盘抽奖」就能抽，和手机上同一套概率、同一个棋盘。\n- 网页端抽奖演出补齐：骰子快切点数、棋子逐格走（越接近终点越慢）、抽到券自动进仓库，音效也和手机一致。\n- 网页端能看保底进度和当前大奖概率，图例里八种格子的实时占比会跟着保底一起变。\n- 网页端仓库可以逐张「使用／撤销」兑换券，并附抽奖流水与概率公示。\n\n修复了：\n- 无"
+  "appVersionCode": 129,
+  "appVersionName": "2.48.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.48.0/DaiWa-debug.apk",
+  "changelog": "新增：\n- 抽中神秘物品时全屏炸开一圈金色爆光，比原来的纯渐变亮眼得多。\n- 棋盘上跳动的棋子换成「金色花台托一颗菱形宝石」的插画，走到哪一格一眼跟得上。\n- 仓库里的兑换券换上真券面：奶茶券暖棕、大餐券橙红、购物袋券深蓝，三张版式统一。\n- 抽中券时弹出的结果卡直接显示那张券的券面。\n\n修复了：\n- 无"
 }
