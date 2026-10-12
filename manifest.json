@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 151,
-  "appVersionName": "2.63.4",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.63.4/DaiWa-debug.apk",
-  "changelog": "新增：\n- 小动物的动画素材从**九帧升级到十六帧**（帧数 +78%，按用户说的「提升帧数的方式是生成更多帧动画」，没有再用播放侧补帧）：8 套素材（4 种动物 × 待机/受惊）全部按 **4×4 十六宫格**重出，每一格的姿势逐句指定——呼吸拆成吸气三成／六成／最满与呼气，眨眼拆成半闭／全闭／半睁，腾空拆成起跳／上升／最高点／下落，动作过渡明显更细腻、不再一格一格跳。\n- 播放节奏保持用户认可的那版：一帧 145ms、一圈约 2.32 秒（和上一版 250ms×9 的 2.25 秒基本一致），刷新率从约 4 帧/秒提到约 6.9 帧/秒；受惊动画仍是利落的 0.9 秒。\n\n修复了：\n- 无。"
+  "appVersionCode": 152,
+  "appVersionName": "2.63.5",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.63.5/DaiWa-debug.apk",
+  "changelog": "新增：\n- 无。\n\n修复了：\n- 小动物的**动作再放慢一半**：十六帧素材每帧从 145ms 改成 290ms，一圈约 4.64 秒（原来 2.32 秒），待机动作更悠闲；**受惊（点击）动画没有跟着变慢**，仍是 57ms/帧、0.91 秒播完一遍，保持「被吓一跳」的利落感。"
 }
