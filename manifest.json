@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 149,
-  "appVersionName": "2.63.2",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.63.2/DaiWa-debug.apk",
-  "changelog": "新增：\n- 无。\n\n修复了：\n- 小动物的动作再顺一档：在**播放侧加了「子帧补间」**——把「当前帧 → 下一帧」按比例交叉叠画，显示更新率不再受素材帧数限制，动作从「一格一格跳」变成连续过渡（观感上远超「帧数再提升 50%」）；单帧时长与一圈总时长保持不变（250ms / 2.25 秒），节奏和上一版一样。\n- 受惊（点击）动画同样补间，且仍保持 0.9 秒的利落节奏。"
+  "appVersionCode": 150,
+  "appVersionName": "2.63.3",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.63.3/DaiWa-debug.apk",
+  "changelog": "新增：\n- 无。\n\n修复了：\n- **去掉上一版加的子帧补间**：为了「提升帧数」把相邻两帧按比例交叉叠画，结果动物整体会掉到半透明、每换一帧脉动一次，看起来就是**在闪烁**，比原来硬切还难看；现在恢复成按帧号硬切，画面干净、不闪。\n- 帧数的真正提升要靠**生成更多帧的动画素材**（原计划 4×4 十六宫格、帧数 +78%）：素材生成目前被账号欠费挡住（图片接口返回 403 AccountOverdueError），充值后即可出图；切图工具与两端代码都已按 16 帧备好，出图就能直接换。"
 }
