@@ -5,8 +5,8 @@
   "faqUrl": "kb_faq_all.json",
   "minAppVersion": 1,
   "note": "把本文件与 kb_tasks_all.json / kb_faq_all.json 一起上传到静态托管，然后在 App 的「我的 → 知识库」填入本文件地址。",
-  "appVersionCode": 152,
-  "appVersionName": "2.63.5",
-  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.63.5/DaiWa-debug.apk",
-  "changelog": "新增：\n- 无。\n\n修复了：\n- 小动物的**动作再放慢一半**：十六帧素材每帧从 145ms 改成 290ms，一圈约 4.64 秒（原来 2.32 秒），待机动作更悠闲；**受惊（点击）动画没有跟着变慢**，仍是 57ms/帧、0.91 秒播完一遍，保持「被吓一跳」的利落感。"
+  "appVersionCode": 153,
+  "appVersionName": "2.64.0",
+  "apkUrl": "https://github.com/a8836892/Daiwa-new/releases/download/v2.64.0/DaiWa-debug.apk",
+  "changelog": "新增：\n- 首页抽奖入口的角标改成显示**骰子**（原来显示的是已经废弃的「金圆券」），并且**投掷后会实时刷新**——旧口径读的是金圆券那张表，棋盘抽奖把骰子花掉以后它一直不动。\n- 首页入口与棋盘抽奖页的骰子换成新画的**「藤蔓缠绕的绿色骰子」图标**（翠绿骰面、金色点数、缠着藤蔓与叶片），替掉原来那个普通的 🎲 emoji；网页端首页角标、抽卡页与棋盘 HUD 也一起换。\n- 神秘大奖的立绘换成**原野森林背景版**（晨雾光柱、飘落叶片，明日方舟／原神式角色立绘），角色定名「黄健」，演出文字改成「黄健 · 神秘物品券」；网页端的大奖演出也加上立绘与这个名字。\n- 为了测试，**下一发固定出神秘大奖**（临时开关，验证完就改回按概率随机）。\n\n修复了：\n- 无。"
 }
